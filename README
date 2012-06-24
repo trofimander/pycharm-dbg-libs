@@ -1,0 +1,8 @@
+gevent monkey-patches some important modules(socket, thread, time, select, threading) which are used by PyCharm debugger. That library contatins copies of this modules.
+
+If installed to Python, PyCharm debugger will use this modules, so gevent monkey-patching won't break things.
+
+Currently tested:
+  - Python 2.7.1, Mac OS X 10.7
+
+Needs to be tested for Python 3!!!
